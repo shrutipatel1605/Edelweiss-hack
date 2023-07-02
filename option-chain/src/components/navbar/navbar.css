@@ -7,7 +7,7 @@
   padding: 10px;
 }
   .navbar__title {
-    font-size: 24px;
+    font-size: 14px;
     color: white;
     align-items: center;
 
@@ -25,3 +25,11 @@
     align-items: center;
   }
   
+  .navbar {
+    background-image: url("nav.png"); 
+   
+    background-position: center;
+    
+    display: flex;  
+    padding: 10px;
+  }
