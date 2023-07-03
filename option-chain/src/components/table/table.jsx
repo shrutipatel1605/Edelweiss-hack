@@ -3,10 +3,14 @@ import {useEffect, useState} from "react";
 import './table_css.css'; 
 import FilterOptions from "../filter/Filter.jsx";
 
-const API = "http://127.0.0.1:5000/api/data";
+const API = "http://127.0.0.1:5000/api/apdata";
+const API2 = "http://127.0.0.1:5000/api/data";
+
 
 const Tab = () => {
     const [data, setUsers] = useState([]);
+    const [tempData, setTempData] = useState({});
+
     const [option1, setOption1] = useState('');
   const [option2, setOption2] = useState('');
   const [option3, setOption3] = useState('');
@@ -59,13 +63,37 @@ const Tab = () => {
     //     updateHeaderLabel();
     //   }, [option3, option4]);
 
-    useEffect(() => {const interval = setInterval(() => {
-      fetchUsers(API);
-    }, 20000);
+
+    const fetchAPI2=async(url) =>{
+        try {
+            const res = await fetch(url);
+            const data = await res.json();
+            // console.log(data);
+            const timestamps = Object.keys(data[0]);
+            console.log(timestamps);
+            const stamp=Object.values(data[0]);
+            const asd=Object.keys(stamp[0])[0];
+
+            const temp=Object.values(stamp[0])[0];
+            const str=temp.strike;
+
+            console.log(str);
+            console.log(temp.expiry);
+            console.log(temp.data.chnge);
+            console.log(asd);
+            console.log(temp);
+            if (data.length > 0) {
+                setUsers(data);
+            }
+            // console.log(data);
+        } catch (e) {
+            console.error(e)
+        }
+    }
     
-    return () => {
-      clearInterval(interval);
-    };
+    useEffect(() => {
+      fetchUsers(API);
+      fetchAPI2(API2);
 
     }, [])
     
