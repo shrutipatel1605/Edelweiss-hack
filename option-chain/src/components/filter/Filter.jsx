@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FilterOptions.css'; 
+import './FilterOptions.css';
 
 const FilterOptions = () => {
   const [option1, setOption1] = useState('');
@@ -10,24 +10,28 @@ const FilterOptions = () => {
   const handleOption1Change = (event) => {
     const selectedOption = event.target.value;
     setOption1(selectedOption);
+    setOption2(''); // Reset option2
     console.log('Option 1:', selectedOption);
   };
-  
+
   const handleOption2Change = (event) => {
     const selectedOption = event.target.value;
     setOption2(selectedOption);
+    setOption1(''); // Reset option1
     console.log('Option 2:', selectedOption);
   };
 
   const handleOption3Change = (event) => {
     const selectedOption = event.target.value;
     setOption3(selectedOption);
+    setOption4(''); // Reset option4
     console.log('Option 3:', selectedOption);
   };
 
   const handleOption4Change = (event) => {
     const selectedOption = event.target.value;
     setOption4(selectedOption);
+    setOption3(''); // Reset option3
     console.log('Option 4:', selectedOption);
   };
   return (

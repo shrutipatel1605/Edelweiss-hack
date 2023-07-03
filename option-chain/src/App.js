@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <FilterOptions/>
+      {/* <FilterOptions/> */}
       <Tab/>
 
        
