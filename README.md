@@ -1,6 +1,6 @@
 # Edelweiss-hack
 
-# GIt clone The repo by pasting the link in your terminal given below:👇n 
+# Git clone The repo by pasting the link in your terminal given below:👇
 
 git clone https://github.com/soumen246/Edelweiss-hack.git
 
