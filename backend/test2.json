@@ -1,0 +1,459 @@
+
+      {
+        "03/07/2023 - 05:33:02": {
+          "MAINIDX20JUL2345000CE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "CE",
+            "data": {
+              "OI": 124,
+              "Change_in_oi": 1,
+              "volume": 32,
+              "iv": 12,
+              "ltp": 12312,
+              "chnge": 112,
+              "bid_qty": 8281,
+              "bid": 1231,
+              "ask": 12892,
+              "ask_qty": 6812
+            }
+          },
+          "TESTIDX20JUL2341200PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 124,
+              "Change_in_oi": 1,
+              "volume": 32,
+              "iv": 12,
+              "ltp": 12312,
+              "chnge": 112,
+              "bid_qty": 8281,
+              "bid": 1231,
+              "ask": 12892,
+              "ask_qty": 6812
+            }
+          },
+          "TESTIDX20JUL2341300PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 126,
+              "Change_in_oi": 2,
+              "volume": 34,
+              "iv": 14,
+              "ltp": 12314,
+              "chnge": 114,
+              "bid_qty": 8283,
+              "bid": 1233,
+              "ask": 12894,
+              "ask_qty": 6814
+            }
+          },
+          "TESTIDX20JUL2341400PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 128,
+              "Change_in_oi": 3,
+              "volume": 36,
+              "iv": 16,
+              "ltp": 12316,
+              "chnge": 116,
+              "bid_qty": 8285,
+              "bid": 1235,
+              "ask": 12896,
+              "ask_qty": 6816
+            }
+          },
+          "TESTIDX20JUL2341500PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 130,
+              "Change_in_oi": 4,
+              "volume": 38,
+              "iv": 18,
+              "ltp": 12318,
+              "chnge": 118,
+              "bid_qty": 8287,
+              "bid": 1237,
+              "ask": 12898,
+              "ask_qty": 6818
+            }
+          },
+          "TESTIDX20JUL2341600PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 132,
+              "Change_in_oi": 5,
+              "volume": 40,
+              "iv": 20,
+              "ltp": 12320,
+              "chnge": 120,
+              "bid_qty": 8289,
+              "bid": 1239,
+              "ask": 12900,
+              "ask_qty": 6820
+            }
+          },
+          "TESTIDX20JUL2341700PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 134,
+              "Change_in_oi": 6,
+              "volume": 42,
+              "iv": 22,
+              "ltp": 12322,
+              "chnge": 122,
+              "bid_qty": 8291,
+              "bid": 1241,
+              "ask": 12902,
+              "ask_qty": 6822
+            }
+          },
+          "TESTIDX20JUL2341800PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 136,
+              "Change_in_oi": 7,
+              "volume": 44,
+              "iv": 24,
+              "ltp": 12324,
+              "chnge": 124,
+              "bid_qty": 8293,
+              "bid": 1243,
+              "ask": 12904,
+              "ask_qty": 6824
+            }
+          },
+          "TESTIDX20JUL2341900PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 138,
+              "Change_in_oi": 8,
+              "volume": 46,
+              "iv": 26,
+              "ltp": 12326,
+              "chnge": 126,
+              "bid_qty": 8295,
+              "bid": 1245,
+              "ask": 12906,
+              "ask_qty": 6826
+            }
+          },
+          "TESTIDX20JUL2341100PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 140,
+              "Change_in_oi": 9,
+              "volume": 48,
+              "iv": 28,
+              "ltp": 12328,
+              "chnge": 128,
+              "bid_qty": 8297,
+              "bid": 1247,
+              "ask": 12908,
+              "ask_qty": 6828
+            }
+          },
+          "TESTIDX20JUL23411200PE": {
+            "strike": 45000,
+            "expiry": "23JUL23",
+            "difference": "+/-/0",
+            "call": "PE",
+            "data": {
+              "OI": 142,
+              "Change_in_oi": 10,
+              "volume": 50,
+              "iv": 30,
+              "ltp": 12330,
+              "chnge": 130,
+              "bid_qty": 8299,
+              "bid": 1249,
+              "ask": 12910,
+              "ask_qty": 6830
+            }
+          },
+
+"MAINIDX20JUL2545000CE": {
+    "strike": 45000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "CE",
+    "data": {
+    "OI": 124,
+    "Change_in_oi": 1,
+    "volume": 32,
+    "iv": 12,
+    "ltp": 12312,
+    "*chnge": 112,
+    "bid_qty": 8281,
+    "bid": 1231,
+    "ask": 12892,
+    "ask_qty": 6812
+    }
+    },
+    "TESTIDX20JUL2541200PE": {
+    "strike": 45000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "PE",
+    "data": {
+    "OI": 124,
+    "Change_in_oi": 1,
+    "volume": 32,
+    "iv": 12,
+    "ltp": 12312,
+    "chnge": 112,
+    "bid_qty": 8281,
+    "bid": 1231,
+    "ask": 12892,
+    "ask_qty": 6812
+    }
+    },
+    "MAINIDX20JUL2350000CE": {
+    "strike": 50000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "CE",
+    "data": {
+    "OI": 100,
+    "Change_in_oi": -5,
+    "volume": 20,
+    "iv": 10,
+    "ltp": 10000,
+    "*chnge": 100,
+    "bid_qty": 8000,
+    "bid": 1000,
+    "ask": 12000,
+    "ask_qty": 6000
+    }
+    },
+    "MAINIDX20JUL2350000PE": {
+    "strike": 50000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "PE",
+    "data": {
+    "OI": 200,
+    "Change_in_oi": 10,
+    "volume": 40,
+    "iv": 20,
+    "ltp": 20000,
+    "chnge": 200,
+    "bid_qty": 9000,
+    "bid": 2000,
+    "ask": 22000,
+    "ask_qty": 7000
+    }
+    },
+    "MAINIDX20JUL2355000CE": {
+    "strike": 55000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "CE",
+    "data": {
+    "OI": 150,
+    "Change_in_oi": 8,
+    "volume": 25,
+    "iv": 15,
+    "ltp": 15000,
+    "*chnge": 150,
+    "bid_qty": 8500,
+    "bid": 1500,
+    "ask": 17000,
+    "ask_qty": 6500
+    }
+    },
+    "MAINIDX20JUL2355000PE": {
+    "strike": 55000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "PE",
+    "data": {
+    "OI": 180,
+    "Change_in_oi": 6,
+    "volume": 35,
+    "iv": 18,
+    "ltp": 18000,
+    "chnge": 180,
+    "bid_qty": 8800,
+    "bid": 1800,
+    "ask": 20000,
+    "ask_qty": 6800
+    }
+    },
+    "MAINIDX20JUL2360000CE": {
+    "strike": 60000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "CE",
+    "data": {
+    "OI": 80,
+    "Change_in_oi": -3,
+    "volume": 18,
+    "iv": 8,
+    "ltp": 8000,
+    "*chnge": 80,
+    "bid_qty": 7800,
+    "bid": 800,
+    "ask": 10000,
+    "ask_qty": 5800
+    }
+    },
+    "MAINIDX20JUL2360000PE": {
+    "strike": 60000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "PE",
+    "data": {
+    "OI": 120,
+    "Change_in_oi": 4,
+    "volume": 28,
+    "iv": 12,
+    "ltp": 12000,
+    "chnge": 120,
+    "bid_qty": 8200,
+    "bid": 1200,
+    "ask": 14000,
+    "ask_qty": 6200
+    }
+    },
+    "MAINIDX20JUL2365000CE": {
+    "strike": 65000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "CE",
+    "data": {
+    "OI": 200,
+    "Change_in_oi": 10,
+    "volume": 40,
+    "iv": 20,
+    "ltp": 20000,
+    "*chnge": 200,
+    "bid_qty": 9000,
+    "bid": 2000,
+    "ask": 22000,
+    "ask_qty": 7000
+    }
+    },
+    "MAINIDX20JUL2365000PE": {
+    "strike": 65000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "PE",
+    "data": {
+    "OI": 180,
+    "Change_in_oi": 6,
+    "volume": 35,
+    "iv": 18,
+    "ltp": 18000,
+    "chnge": 180,
+    "bid_qty": 8800,
+    "bid": 1800,
+    "ask": 20000,
+    "ask_qty": 6800
+    }
+    },
+    "MAINIDX20JUL2370000CE": {
+    "strike": 70000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "CE",
+    "data": {
+    "OI": 100,
+    "Change_in_oi": -5,
+    "volume": 20,
+    "iv": 10,
+    "ltp": 10000,
+    "*chnge": 100,
+    "bid_qty": 8000,
+    "bid": 1000,
+    "ask": 12000,
+    "ask_qty": 6000
+    }
+    },
+    "MAINIDX20JUL2370000PE": {
+    "strike": 70000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "PE",
+    "data": {
+    "OI": 120,
+    "Change_in_oi": 4,
+    "volume": 28,
+    "iv": 12,
+    "ltp": 12000,
+    "chnge": 120,
+    "bid_qty": 8200,
+    "bid": 1200,
+    "ask": 14000,
+    "ask_qty": 6200
+    }
+    },
+    "MAINIDX20JUL2375000CE": {
+    "strike": 75000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "CE",
+    "data": {
+    "OI": 150,
+    "Change_in_oi": 8,
+    "volume": 25,
+    "iv": 15,
+    "ltp": 15000,
+    "*chnge": 150,
+    "bid_qty": 8500,
+    "bid": 1500,
+    "ask": 17000,
+    "ask_qty": 6500
+    }
+    },
+    "MAINIDX20JUL2375000PE": {
+    "strike": 75000,
+    "expiry": "23JUL23",
+    "difference": "+/-/0",
+    "call": "PE",
+    "data": {
+    "OI": 100,
+    "Change_in_oi": 1,
+    "volume": 32,
+    "iv": 12,
+    "ltp": 12312,
+    "chnge": 112,
+    "bid_qty": 8281,
+    "bid": 1231,
+    "ask": 12892,
+    "ask_qty": 6812
+    }
+    }
+        }
+    }
+      
+  
+  
