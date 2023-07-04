@@ -7,11 +7,10 @@ import FilterOptions from "../filter/Filter.jsx";
 const API = "http://127.0.0.1:5000/api/apdata";
 const API2 = "http://127.0.0.1:5000/api/data";
 let res="",data2="",dynamicObjectName="",ab="";
-let dynamicValueName="";
 
 const Tab = () => {
 
-    const [datamc, setUsers] = useState([]);
+     const [datamc, setUsers] = useState([]);
     const [tempData, setTempData] = useState({});
 
     const [option1, setOption1] = useState('');
@@ -67,22 +66,18 @@ const Tab = () => {
         try {
            res = await fetch(url);
            data2 = await res.json();
-
-        //    data2["MAININDX27JUL23"];
           console.log('Data2 Object:', data2);  //whole json nifty
            dynamicObjectName = Object.values(data2)[0];
-          dynamicValueName = Object.keys(data2)[0];
           console.log('Dynamic Object Name:', dynamicObjectName);
         //   const dynamicData = data2[dynamicObjectName];
         //   console.log('Dynamic Data:', dynamicData);
       setTempData(dynamicObjectName);
           // Now you can access the properties ins;ide the dynamicData object
-           ab = dynamicObjectName.strike;
+          const strike = dynamicObjectName.strike;
         //   const expiry = dynamicData.expiry;
         //   const changeInOI = dynamicData.data.Change_in_oi;
       
-          console.log('Strike:', ab);
-          console.log("NIFTY",dynamicValueName);
+          console.log('Strike:', strike);
         //   console.log('Expiry:', expiry);
         //   console.log('Change in OI:', changeInOI);
         if (data2.length > 0) {
@@ -111,7 +106,7 @@ const UserData = ({users,temp}) => {
                         
                         <tr key={id}>
                         <td></td>
-                        <td>{ab}</td>
+                        <td>{OI}</td>
                         <td>{Chng_in_OI}</td>
                         <td>{dynamicDataObject.strike}</td>
                         <td>{Volume}</td>
@@ -156,18 +151,29 @@ const UserData = ({users,temp}) => {
 <div className="filter-options">
   <div className="filter11">
   <label htmlFor="filter1">View Options Contracts for:</label>
-  <select id="filter1" value={option1} onChange={handleOption1Change} defaultValue="allbanks">
-    <option value="allbanks">ALLBANKS</option>
-    <option value="mainidx">MAINIDX</option>
-    <option value="financials">FINANCIALS</option>
-    <option value="midcap">MIDCAP</option>
+  <select id="filter1" value={option1} onChange={handleOption1Change}>
+    <option value="">Select an option  </option>
+    <option value="NIFTY">NIFTY</option>
+    <option value="finnifty">finnifty</option>
+    <option value="banknifty">banknifty</option>
+    <option value="midcpnifty">midcpnifty</option>
   </select>
   </div>
  
+<div className='12'>
+Or &nbsp;
+
+<label htmlFor="filter2">Filter 2:</label>
+  <select id="filter2" value={option2} onChange={handleOption2Change}>
+    <option value="">Select an option</option>
+   <option value="AARTIIND">AARTIIND</option><option value="ABB">ABB</option><option value="ABBOTINDIA">ABBOTINDIA</option><option value="ABCAPITAL">ABCAPITAL</option><option value="ABFRL">ABFRL</option><option value="ACC">ACC</option><option value="ADANIENT">ADANIENT</option><option value="ADANIPORTS">ADANIPORTS</option><option value="ALKEM">ALKEM</option><option value="AMBUJACEM">AMBUJACEM</option><option value="APOLLOHOSP">APOLLOHOSP</option><option value="APOLLOTYRE">APOLLOTYRE</option><option value="ASHOKLEY">ASHOKLEY</option><option value="ASIANPAINT">ASIANPAINT</option><option value="ASTRAL">ASTRAL</option><option value="ATUL">ATUL</option><option value="AUBANK">AUBANK</option><option value="AUROPHARMA">AUROPHARMA</option><option value="AXISBANK">AXISBANK</option><option value="BAJAJ-AUTO">BAJAJ-AUTO</option><option value="BAJAJFINSV">BAJAJFINSV</option><option value="BAJFINANCE">BAJFINANCE</option><option value="BALKRISIND">BALKRISIND</option><option value="BALRAMCHIN">BALRAMCHIN</option><option value="BANDHANBNK">BANDHANBNK</option><option value="BANKBARODA">BANKBARODA</option><option value="BATAINDIA">BATAINDIA</option><option value="BEL">BEL</option><option value="BERGEPAINT">BERGEPAINT</option><option value="BHARATFORG">BHARATFORG</option><option value="BHARTIARTL">BHARTIARTL</option><option value="BHEL">BHEL</option><option value="BIOCON">BIOCON</option><option value="BOSCHLTD">BOSCHLTD</option><option value="BPCL">BPCL</option><option value="BRITANNIA">BRITANNIA</option><option value="BSOFT">BSOFT</option><option value="CANBK">CANBK</option><option value="CANFINHOME">CANFINHOME</option><option value="CHAMBLFERT">CHAMBLFERT</option><option value="CHOLAFIN">CHOLAFIN</option><option value="CIPLA">CIPLA</option><option value="COALINDIA">COALINDIA</option><option value="COFORGE">COFORGE</option><option value="COLPAL">COLPAL</option><option value="CONCOR">CONCOR</option><option value="COROMANDEL">COROMANDEL</option><option value="CROMPTON">CROMPTON</option><option value="CUB">CUB</option><option value="CUMMINSIND">CUMMINSIND</option><option value="DABUR">DABUR</option><option value="DALBHARAT">DALBHARAT</option><option value="DEEPAKNTR">DEEPAKNTR</option><option value="DELTACORP">DELTACORP</option><option value="DIVISLAB">DIVISLAB</option><option value="DIXON">DIXON</option><option value="DLF">DLF</option><option value="DRREDDY">DRREDDY</option><option value="EICHERMOT">EICHERMOT</option><option value="ESCORTS">ESCORTS</option><option value="EXIDEIND">EXIDEIND</option><option value="FEDERALBNK">FEDERALBNK</option><option value="GAIL">GAIL</option><option value="GLENMARK">GLENMARK</option><option value="GMRINFRA">GMRINFRA</option><option value="GNFC">GNFC</option><option value="GODREJCP">GODREJCP</option><option value="GODREJPROP">GODREJPROP</option><option value="GRANULES">GRANULES</option><option value="GRASIM">GRASIM</option><option value="GUJGASLTD">GUJGASLTD</option><option value="HAL">HAL</option><option value="HAVELLS">HAVELLS</option><option value="HCLTECH">HCLTECH</option><option value="HDFC">HDFC</option><option value="HDFCAMC">HDFCAMC</option><option value="HDFCBANK">HDFCBANK</option><option value="HDFCLIFE">HDFCLIFE</option><option value="HEROMOTOCO">HEROMOTOCO</option><option value="HINDALCO">HINDALCO</option><option value="HINDCOPPER">HINDCOPPER</option><option value="HINDPETRO">HINDPETRO</option><option value="HINDUNILVR">HINDUNILVR</option><option value="IBULHSGFIN">IBULHSGFIN</option><option value="ICICIBANK">ICICIBANK</option><option value="ICICIGI">ICICIGI</option><option value="ICICIPRULI">ICICIPRULI</option><option value="IDEA">IDEA</option><option value="IDFC">IDFC</option><option value="IDFCFIRSTB">IDFCFIRSTB</option><option value="IEX">IEX</option><option value="IGL">IGL</option><option value="INDHOTEL">INDHOTEL</option><option value="INDIACEM">INDIACEM</option><option value="INDIAMART">INDIAMART</option><option value="INDIGO">INDIGO</option><option value="INDUSINDBK">INDUSINDBK</option><option value="INDUSTOWER">INDUSTOWER</option><option value="INFY">INFY</option><option value="INTELLECT">INTELLECT</option><option value="IOC">IOC</option><option value="IPCALAB">IPCALAB</option><option value="IRCTC">IRCTC</option><option value="ITC">ITC</option><option value="JINDALSTEL">JINDALSTEL</option><option value="JKCEMENT">JKCEMENT</option><option value="JSWSTEEL">JSWSTEEL</option><option value="JUBLFOOD">JUBLFOOD</option><option value="KOTAKBANK">KOTAKBANK</option><option value="L&amp;TFH">L&amp;TFH</option><option value="LALPATHLAB">LALPATHLAB</option><option value="LAURUSLABS">LAURUSLABS</option><option value="LICHSGFIN">LICHSGFIN</option><option value="LT">LT</option><option value="LTIM">LTIM</option><option value="LTTS">LTTS</option><option value="LUPIN">LUPIN</option><option value="M&amp;M">M&amp;M</option><option value="M&amp;MFIN">M&amp;MFIN</option><option value="MANAPPURAM">MANAPPURAM</option><option value="MARICO">MARICO</option><option value="MARUTI">MARUTI</option><option value="MCDOWELL-N">MCDOWELL-N</option><option value="MCX">MCX</option><option value="METROPOLIS">METROPOLIS</option><option value="MFSL">MFSL</option><option value="MGL">MGL</option><option value="MOTHERSON">MOTHERSON</option><option value="MPHASIS">MPHASIS</option><option value="MRF">MRF</option><option value="MUTHOOTFIN">MUTHOOTFIN</option><option value="NATIONALUM">NATIONALUM</option><option value="NAUKRI">NAUKRI</option><option value="NAVINFLUOR">NAVINFLUOR</option><option value="NESTLEIND">NESTLEIND</option><option value="NMDC">NMDC</option><option value="NTPC">NTPC</option><option value="OBEROIRLTY">OBEROIRLTY</option><option value="OFSS">OFSS</option><option value="ONGC">ONGC</option><option value="PAGEIND">PAGEIND</option><option value="PEL">PEL</option><option value="PERSISTENT">PERSISTENT</option><option value="PETRONET">PETRONET</option><option value="PFC">PFC</option><option value="PIDILITIND">PIDILITIND</option><option value="PIIND">PIIND</option><option value="PNB">PNB</option><option value="POLYCAB">POLYCAB</option><option value="POWERGRID">POWERGRID</option><option value="PVR">PVR</option><option value="PVRINOX">PVRINOX</option><option value="RAMCOCEM">RAMCOCEM</option><option value="RBLBANK">RBLBANK</option><option value="RECLTD">RECLTD</option><option value="RELIANCE">RELIANCE</option><option value="SAIL">SAIL</option><option value="SBICARD">SBICARD</option><option value="SBILIFE">SBILIFE</option><option value="SBIN">SBIN</option><option value="SHREECEM">SHREECEM</option><option value="SHRIRAMFIN">SHRIRAMFIN</option><option value="SIEMENS">SIEMENS</option><option value="SRF">SRF</option><option value="SUNPHARMA">SUNPHARMA</option><option value="SUNTV">SUNTV</option><option value="SYNGENE">SYNGENE</option><option value="TATACHEM">TATACHEM</option><option value="TATACOMM">TATACOMM</option><option value="TATACONSUM">TATACONSUM</option><option value="TATAMOTORS">TATAMOTORS</option><option value="TATAPOWER">TATAPOWER</option><option value="TATASTEEL">TATASTEEL</option><option value="TCS">TCS</option><option value="TECHM">TECHM</option><option value="TITAN">TITAN</option><option value="TORNTPHARM">TORNTPHARM</option><option value="TRENT">TRENT</option><option value="TVSMOTOR">TVSMOTOR</option><option value="UBL">UBL</option><option value="ULTRACEMCO">ULTRACEMCO</option><option value="UPL">UPL</option><option value="VEDL">VEDL</option><option value="VOLTAS">VOLTAS</option><option value="WIPRO">WIPRO</option><option value="ZEEL">ZEEL</option><option value="ZYDUSLIFE">ZYDUSLIFE</option></select>
+
+
+</div>
 <div class="space"></div>
  
 <div className='filter13'>
-  <label htmlFor="filter3">Expiry Date:</label>
+  <label htmlFor="filter3">Filter 3:</label>
   <select id="filter3" value={option3} onChange={handleOption3Change}>
     <option value="">Expiry Date &nbsp;</option>&nbsp;
     <option value="06-Jul-2023">06-Jul-2023</option><option value="13-Jul-2023">13-Jul-2023</option><option value="20-Jul-2023">20-Jul-2023</option><option value="27-Jul-2023">27-Jul-2023</option><option value="03-Aug-2023">03-Aug-2023</option><option value="31-Aug-2023">31-Aug-2023</option><option value="28-Sep-2023">28-Sep-2023</option><option value="28-Dec-2023">28-Dec-2023</option><option value="28-Mar-2024">28-Mar-2024</option><option value="27-Jun-2024">27-Jun-2024</option><option value="26-Dec-2024">26-Dec-2024</option><option value="26-Jun-2025">26-Jun-2025</option><option value="24-Dec-2025">24-Dec-2025</option><option value="25-Jun-2026">25-Jun-2026</option><option value="31-Dec-2026">31-Dec-2026</option><option value="24-Jun-2027">24-Jun-2027</option><option value="30-Dec-2027">30-Dec-2027</option><option value="29-Jun-2028">29-Jun-2028</option></select>
@@ -228,28 +234,29 @@ const UserData = ({users,temp}) => {
 
     </>
 }
+
 export default Tab;
-{/* export default Tab;
 
 
- const Tab = () => {
-    const [data, setUsers] = useState([]);
-    useEffect(() => {
-      const eventSource = new EventSource(API);
-      function handleStream(e){
-        console.log(e)
-        setUsers(e.data)
-      }
-      eventSource.onmessage= e=>{handleStream(e)}
-      // eventSource.addEventListener("message", (event) => {
-      //   const newData = JSON.parse(event.data);
-      //   setUsers((prevData) => [...prevData, newData]);
-      // });
-      eventSource.onerror=e=>{
-        eventSource.close()
-      }
-      return () => {
-        eventSource.close();
-      };
-    }, []); */}
+
+// const Tab = () => {
+//     const [data, setUsers] = useState([]);
+//     useEffect(() => {
+//       const eventSource = new EventSource(API);
+//       function handleStream(e){
+//         console.log(e)
+//         setUsers(e.data)
+//       }
+//       eventSource.onmessage= e=>{handleStream(e)}
+//       // eventSource.addEventListener("message", (event) => {
+//       //   const newData = JSON.parse(event.data);
+//       //   setUsers((prevData) => [...prevData, newData]);
+//       // });
+//       eventSource.onerror=e=>{
+//         eventSource.close()
+//       }
+//       return () => {
+//         eventSource.close();
+//       };
+//     }, []);
 
